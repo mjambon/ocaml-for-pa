@@ -201,7 +201,8 @@ kinds of expressions are:
 
 The different kinds of computations are:
 
-* literal: an atom denoting a precomputed value such as `42` or `"hello"`
+* literal: an atom denoting a precomputed value such as `42`,
+  `"hello"`, or `true`.
 * variable substitution: a single identifier to be replaced by its
   value e.g. `x`.
 * function call: a parenthesized expression that doesn't start with a
@@ -222,9 +223,6 @@ end of the line.
 ```
 ; An atomic expression that evaluates to the number 42.
 42
-
-; The value of type unit like in OCaml.
-()
 
 ; A call to the predefined '+' function on 2 numbers, evaluating to 2.
 (+ 1 1)
@@ -289,7 +287,7 @@ f
       (print "Awesome!!!")
     )
   )
-)
+))
 
 ; The concatenation of three lists, giving the list '(list 1 2 3 4 5)'.
 (concat (list 1 2) (list 3) (list 4 5))
