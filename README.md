@@ -2,7 +2,7 @@
 
 This repository contains material for teaching the fundamentals of
 OCaml and functional programming that matter for a better
-understanding how programs work.
+understanding how of programs work.
 
 ## Intended audience
 
@@ -12,7 +12,17 @@ wants to understand better how programs are interpreted.
 ## Prerequisites
 
 * know how to run shell commands, find files on the computer
-* required software: git, opam, vscode
+* required software:
+  - git
+  - opam: package manager for OCaml libraries and executables
+  - vscode or another editor with an editing mode for OCaml (`code` command)
+  - merlin (installed with `opam install merlin`) for seeing inferred
+    types while editing OCaml code
+
+Once opam is installed, install the opam packages that we'll need:
+```
+opam install merlin
+```
 
 ## Goals
 
@@ -213,10 +223,13 @@ end of the line.
 ; An atomic expression that evaluates to the number 42.
 42
 
+; The value of type unit like in OCaml.
+()
+
 ; A call to the predefined '+' function on 2 numbers, evaluating to 2.
 (+ 1 1)
 
-; A call to the predefined 'list' function that creates a list from the given
+; A call to the predefined 'list' construct that creates a list from the given
 ; items.
 (list 1 2 3)
 
@@ -243,7 +256,7 @@ end of the line.
 ; The value of the function 'f', which is '(fun () (+ a 100))'.
 f
 
-; The definition of a parametrized function 'is_even' that returns
+; The definition of a function 'is_even' that returns
 ; 'true' or 'false' depending on the whether its argument is even.
 (let is_even (fun (x) (= 0 (mod x 2))))
 
