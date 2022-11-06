@@ -12,17 +12,25 @@ wants to understand better how programs are interpreted.
 ## Prerequisites
 
 * know how to run shell commands, find files on the computer
-* required software:
+* required software (teacher's responsibility):
   - git
-  - opam: package manager for OCaml libraries and executables
-  - vscode or another editor with an editing mode for OCaml (`code` command)
-  - merlin (installed with `opam install merlin`) for seeing inferred
-    types while editing OCaml code
-
-Once opam is installed, install the opam packages that we'll need:
-```
-opam install merlin
-```
+  - [vscode](https://code.visualstudio.com/) (`code` command) or
+    another editor with an editing mode for OCaml
+  - opam: package manager for OCaml libraries and
+    executables. Make sure you have a opam 2 (`opam --version`). If
+    not, install it by following the instructions from the
+    [Opam website](https://opam.ocaml.org/doc/Install.html).
+  - Anrecent version of OCaml initialized via `opam switch create 4.14.0`.
+    Replace `4.14.0` by the latest version of OCaml if you wish.
+  - Opam packages to be installed with `opam install`:
+    * `lsp` or `merlin` (depending on your text editor) to show you
+      syntax highlighting and type hints.
+    * `utop` for interactive use of OCaml. It's a better alternative
+      to the `ocaml` command.
+    * `dune` for compiling and recompiling OCaml programs made up of
+      multiple files.
+    * `menhir`, a parser generator used in the final project as a
+      better alternative to ocamlyacc.
 
 ## Goals
 
