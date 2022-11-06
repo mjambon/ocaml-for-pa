@@ -2,7 +2,7 @@
 
 This repository contains material for teaching the fundamentals of
 OCaml and functional programming that matter for a better
-understanding how of programs work.
+understanding of how programs work.
 
 ## Intended audience
 
@@ -273,17 +273,17 @@ f
 ; A function that asks the user whether they want to exit the program,
 ; reads the value, prints a relevant message, and exits if it's what
 ; they want.
-; 'seq' is used to evaluate a sequence of expressions. This returns
+; 'prog' is used to evaluate a sequence of expressions. This returns
 ; the value of the last expression if there is one or '()' otherwise.
 (let quit (fun ()
   (print "Do you really want to quit? [y/N]")
   (let answer (read_line))
   (if (or (= answer "y") (= answer "Y"))
-    (seq
+    (prog
       (print "Goodbye!")
       (exit)
     )
-    (seq
+    (prog
       (print "Awesome!!!")
     )
   )
@@ -311,7 +311,7 @@ f
 ; A recursive function for iterating over a list.
 (let iter (fun (f xs)
   (if (<> xs (list))
-    (seq
+    (prog
       (f (head xs))
       (iter f (tail xs))
     )
