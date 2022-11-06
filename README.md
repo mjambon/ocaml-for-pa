@@ -20,7 +20,7 @@ wants to understand better how programs are interpreted.
     executables. Make sure you have a opam 2 (`opam --version`). If
     not, install it by following the instructions from the
     [Opam website](https://opam.ocaml.org/doc/Install.html).
-  - Anrecent version of OCaml initialized via `opam switch create 4.14.0`.
+  - A recent version of OCaml initialized via `opam switch create 4.14.0`.
     Replace `4.14.0` by the latest version of OCaml if you wish.
   - Opam packages to be installed with `opam install`:
     * `lsp` or `merlin` (depending on your text editor) to show you
