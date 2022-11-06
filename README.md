@@ -341,3 +341,18 @@ f
 (let f (a b c) (+ a (* b c)))
 ((f 1 3) 5)
 ```
+
+Tasks:
+
+* Build and run the initial implementation. Instructions are in the
+  makefile.
+* Inspect the source code to see what's there.
+* Define the intermediate language (IL, file `IL.ml`).
+* Start implementing the evaluator (`Eval.ml`). You can start by
+  leaving all by the simplest operations unimplemented for now.
+* Print the result of evaluating an expression entered by the user.
+* Handle syntax errors gracefully as needed. Take care of possible
+  bugs in the code provided by the teacher.
+* Add functionality to the evaluator. For this, start a collection of
+  test cases, i.e. sample programs written in the target language,
+  and run the `interp` program.
