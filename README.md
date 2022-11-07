@@ -338,7 +338,7 @@ f
 
 ; Optional: partial function application.
 ; Evaluates to 16.
-(let f (a b c) (+ a (* b c)))
+(let f (fun (a b c) (+ a (* b c))))
 ((f 1 3) 5)
 ```
 
