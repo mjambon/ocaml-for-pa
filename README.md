@@ -344,12 +344,12 @@ f
 
 Tasks:
 
-* Build and run the initial implementation. Instructions are in the
+* Build and run the initial code. Instructions are in the
   makefile.
 * Inspect the source code to see what's there.
 * Define the intermediate language (IL, file `IL.ml`).
 * Start implementing the evaluator (`Eval.ml`). You can start by
-  leaving all by the simplest operations unimplemented for now.
+  leaving all but the simplest operations unimplemented for now.
 * Print the result of evaluating an expression entered by the user.
 * Handle syntax errors gracefully as needed. Take care of possible
   bugs in the code provided by the teacher.
