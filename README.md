@@ -263,7 +263,7 @@ end of the line.
 f
 
 ; The definition of a function 'is_even' that returns
-; 'true' or 'false' depending on the whether its argument is even.
+; 'true' or 'false' depending on whether its argument is even.
 (let is_even (fun (x) (= 0 (mod x 2))))
 
 ; This evaluates to 'true'.
@@ -356,3 +356,14 @@ Tasks:
 * Add functionality to the evaluator. For this, start a collection of
   test cases, i.e. sample programs written in the target language,
   and run the `interp` program.
+
+Ideas for extra credits:
+
+* Write a useful program in the new language.
+* Add support for partial application.
+* Write and load a library of functions to manipulate lists.
+* Add support for references.
+* Add support for pattern matching. Note that a representation for
+  sum types is already available in the base language since there's
+  no typechecking and lists, tuples, and variants all use the basic
+  atom and list building blocks.
